@@ -1,7 +1,7 @@
 {
   "name": "js-ds-and-algos",
   "version": "1.0.0",
-  "description": "A collection of data structures and algorithms in Typescript",
+  "description": "A collection of foundational algorithms and data structions",
   "main": "index.js",
   "scripts": {
     "test": "npm run test"
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/xacaciax/js-ds-and-algos.git"
   },
+  "keywords": [
+    "data-structures",
+    "algorithms"
+  ],
   "author": "xacaciax",
   "license": "ISC",
   "bugs": {
