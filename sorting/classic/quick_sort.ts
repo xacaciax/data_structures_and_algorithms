@@ -1,4 +1,27 @@
 /**
+ Quick sort is a sorting algorithm that works by selecting a "pivot" element from a list of items, and 
+ partitioning the other items into two sub-lists, according to whether they are less than or greater 
+ than the pivot. The algorithm then recursively sorts the sub-lists until the entire list is sorted.
+
+ The quick sort algorithm was developed by Tony Hoare in 1959 while he was working on the Atlas computer 
+ at the University of London. The algorithm was initially called "partition-exchange sort" and was 
+ later renamed to "quick sort". Hoare originally developed the algorithm to sort items in random
+  access memory, which was a new technology at the time.
+
+ The quick sort algorithm is known for its efficiency and is often used for sorting large lists of 
+ items. Its average-case time complexity is O(n log n), which means that it can handle large lists of 
+ items much more quickly than algorithms with higher time complexities. However, its worst-case time 
+ complexity is O(n^2), which can occur when the pivot is chosen poorly.
+
+ The basic idea behind quick sort is to partition the list of items around a chosen pivot element, so 
+ that all items less than the pivot are on one side of the pivot, and all items greater than the pivot are on the other side. The pivot is then placed in its final position, and the algorithm recursively sorts the sub-lists on either side of the pivot until the entire list is sorted.
+
+ The quick sort algorithm has several variations, including randomized quick sort, which randomly chooses 
+ the pivot element to reduce the likelihood of worst-case scenarios, and three-way quick sort, which 
+ handles lists with duplicate elements more efficiently.
+ */
+
+/**
  * Sorts an array of numbers using the quicksort algorithm.
  * 
  * @param arr The array of numbers to be sorted.

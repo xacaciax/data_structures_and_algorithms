@@ -1,4 +1,18 @@
 /**
+ Merge sort is a sorting algorithm that works by dividing a list of items into smaller sub-lists, sorting 
+ those sub-lists recursively, and then merging them back together in order. The algorithm was first described 
+ by John von Neumann in 1945, but it was not widely used until the development of computer science in the 1960s.
+
+ The merge sort algorithm is known for its efficiency and is often used for sorting large lists of items. Its 
+ worst-case time complexity is O(n log n), which means that it can handle large lists of items much more quickly 
+ than algorithms with higher time complexities.
+
+ The basic idea behind merge sort is to repeatedly divide the list in half until there are only individual items
+ or empty sub-lists. Then, the algorithm sorts the sub-lists by merging adjacent pairs of sub-lists together. 
+ This process is repeated until the entire list is sorted.
+ */
+
+/**
  * Sorts an array of integers using the merge sort algorithm.
  * @param {Array<number>} arr - The input array to be sorted.
  * @returns {Array<number>} - The sorted array.
