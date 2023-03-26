@@ -12,7 +12,7 @@ This repository contains a collection of data structures and algorithms that are
 | Queues         | O(1) enqueue, dequeue/peek | O(n) |
 | Trees          | O(log n) search/insert/delete | O(n) |
 | Heaps          | O(log n) insert/delete, O(1) get min/max | O(n) |
-| Graphs         | O(|V| + |E|) search/insert/delete | O(|V| + |E|) |
+| Graphs         | O(V + E) search/insert/delete | O(V + E) |
 | Hash Tables    | O(1) average case, O(n) worst case search/insert/delete | O(n) |
 
 The time and space complexity listed are generally for the worst-case scenario and may vary depending on the implementation.
@@ -27,8 +27,8 @@ The time and space complexity listed are generally for the worst-case scenario a
 | Merge Sort      | O(n log n)     |
 | Quick Sort      | O(n log n)     |
 | Binary Search   | O(log n)       |
-| Breadth-First Search (BFS) | O(|V| + |E|) |
-| Depth-First Search (DFS)   | O(|V| + |E|) |
+| Breadth-First Search (BFS) | O(V + E) |
+| Depth-First Search (DFS)   | O(V + E) |
 
 The time complexity listed is generally for the worst-case scenario and may vary depending on the implementation.
 
