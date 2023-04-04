@@ -10,8 +10,9 @@ function find_top_k_frequent_elements(arr: number[], k: number): number[] {
     let numbers: number[][] = [[]];
     let result: number[] = [];
   
-    // Count the frequency of each element in the array.
     /**  
+    Count the frequency of each element in the array.
+
     arr = [0, 1, 2, 1, 2, 1, 0, 3, 4] => 
     frequency = { 
                      "0": 2, 
@@ -29,8 +30,9 @@ function find_top_k_frequent_elements(arr: number[], k: number): number[] {
       }
     }
   
-    // Store the elements in a nested array based on their frequency.
     /**
+     Store the elements in a nested array based on their frequency.
+
      numbers = [
                     0:  [ ],
                     1:  [3, 4],
