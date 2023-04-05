@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-  
- import generateAllSubsets from "./generate_subsets";
+import generateAllSubsets from "./generate_subsets";
  
  describe("generateAllSubsets", () => {
     test("returns an empty array for an empty string", () => {
@@ -28,5 +26,3 @@
       ].sort());
     });
   });
-=======
->>>>>>> parent of e6d3921 (add generate_subsets)
