@@ -27,7 +27,7 @@
  * @param arr The array of numbers to be sorted.
  * @returns The sorted array of numbers.
  */
-function quickSort(arr: Array<number>): Array<number> {
+export default function quickSort(arr: Array<number>): Array<number> {
     /**
      * Recursively sorts a subarray of an array using the quicksort algorithm.
      * 

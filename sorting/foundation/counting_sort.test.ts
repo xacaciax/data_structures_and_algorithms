@@ -1,3 +1,5 @@
+import counting_sort from "./counting_sort";
+
 describe('counting_sort', () => {
     it('sorts an unsorted array of positive integers', () => {
         const unsorted = [4, 3, 7, 1, 9, 5, 8, 2, 6];

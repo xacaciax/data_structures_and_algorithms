@@ -4,7 +4,7 @@
  * @param k The kth largest number to find.
  * @returns The kth largest number in the array.
  */
-function kth_largest_in_an_array(numbers: number[], k: number): number {
+export default function kth_largest_in_an_array(numbers: number[], k: number): number {
     /**
      * A helper function that recursively partitions the array using the Quick Select algorithm
      * and moves the pivot value to the middle of the smaller and bigger sets.
@@ -14,6 +14,8 @@ function kth_largest_in_an_array(numbers: number[], k: number): number {
      * @param index The index of the kth largest number to find.
      */
     function helper(arr: number[], start: number, end: number, index: number): void {
+        if (k > arr.length) throw Error('invalid input: array must have at least k elements');
+
         // base case
         if (start >= end) {
             return;

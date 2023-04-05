@@ -3,7 +3,7 @@
  * @param intervals - An array of intervals, where each interval is represented as a 2-element array [start, end]
  * @returns 1 if it is possible to attend all meetings, 0 otherwise.
  */
-function can_attend_all_meetings(intervals: number[][]): number {
+export default function can_attend_all_meetings(intervals: number[][]): number {
     // presort input by first value (start time)
     intervals.sort((a, b) => a[0] - b[0]);
   

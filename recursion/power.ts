@@ -4,7 +4,7 @@
  * @param b - The exponent, as an integer.
  * @returns The result of a to the power of b, modulo 10^9 + 7.
  */
-function calculate_power(a: number, b: number): number {
+export default function calculate_power(a: number, b: number): number {
     const mod = BigInt(1e9 + 7);
 
     /**

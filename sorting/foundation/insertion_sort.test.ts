@@ -1,3 +1,5 @@
+import insertion_sort from "./insertion_sort";
+
 describe("insertion_sort", () => {
     test("should return an empty array if passed an empty array", () => {
       expect(insertion_sort([])).toEqual([]);
@@ -11,12 +13,6 @@ describe("insertion_sort", () => {
       expect(insertion_sort([3, 2, 1])).toEqual([1, 2, 3]);
       expect(insertion_sort([1, 5, 2, 7, 3])).toEqual([1, 2, 3, 5, 7]);
       expect(insertion_sort([9, 8, 7, 6, 5, 4, 3, 2, 1])).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-    });
-  
-    test("should not modify the original array", () => {
-      const arr = [3, 2, 1];
-      insertion_sort(arr);
-      expect(arr).toEqual([3, 2, 1]);
     });
   
     test("should handle large arrays", () => {

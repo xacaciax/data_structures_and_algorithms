@@ -56,7 +56,7 @@ const buildHeap = (arr) => {
  * @param {number[]} arr - The input array to be sorted.
  * @return {number[]} - The sorted array.
  */
-function heap_sort(arr) {
+export default function heap_sort(arr) {
     buildHeap(arr);
     
     let n = arr.length; 

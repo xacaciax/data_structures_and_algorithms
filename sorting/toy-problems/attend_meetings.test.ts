@@ -1,3 +1,5 @@
+import can_attend_all_meetings from "./attend_meetings";
+
 describe('can_attend_all_meetings', () => {
     test('returns 1 for non-overlapping intervals', () => {
       expect(can_attend_all_meetings([[1, 2], [3, 4], [5, 6]])).toBe(1);

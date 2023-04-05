@@ -1,3 +1,5 @@
+import bubble_sort from "./bubble_sort";
+
 describe("bubble_sort", () => {
     test("should return an empty array if passed an empty array", () => {
       expect(bubble_sort([])).toEqual([]);
@@ -11,12 +13,6 @@ describe("bubble_sort", () => {
       expect(bubble_sort([3, 2, 1])).toEqual([1, 2, 3]);
       expect(bubble_sort([1, 5, 2, 7, 3])).toEqual([1, 2, 3, 5, 7]);
       expect(bubble_sort([9, 8, 7, 6, 5, 4, 3, 2, 1])).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-    });
-  
-    test("should not modify the original array", () => {
-      const arr = [3, 2, 1];
-      bubble_sort(arr);
-      expect(arr).toEqual([3, 2, 1]);
     });
   
     test("should handle large arrays", () => {

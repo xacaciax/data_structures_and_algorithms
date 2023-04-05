@@ -1,9 +1,10 @@
+<<<<<<< HEAD
 /**
  * Generates all possible subsets of the input string.
  * @param {string} s - The input string.
  * @returns {string[]} - An array of all the subsets.
  */
-function generate_all_subsets(s: string): string[] {
+export default function generateAllSubsets(s: string): string[] {
     let result: string[] = [];
     let subset: string[] = s.split("");
   
@@ -32,3 +33,5 @@ function generate_all_subsets(s: string): string[] {
   
     return result;
   }
+=======
+>>>>>>> parent of e6d3921 (add generate_subsets)

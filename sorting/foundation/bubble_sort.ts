@@ -4,7 +4,7 @@
  * @param {Array<number>} arr - The array of integers to sort.
  * @returns {Array<number>} - The sorted array of integers.
  */
-function bubble_sort(arr: Array<number>): Array<number> {
+export default function bubble_sort(arr: Array<number>): Array<number> {
     let n = arr.length; 
     for (let i = 0; i < n; i++) {
         let temp = arr[i];

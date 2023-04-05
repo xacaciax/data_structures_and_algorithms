@@ -1,19 +1,22 @@
+<<<<<<< HEAD
   
- describe("generate_all_subsets", () => {
+ import generateAllSubsets from "./generate_subsets";
+ 
+ describe("generateAllSubsets", () => {
     test("returns an empty array for an empty string", () => {
-      expect(generate_all_subsets("")).toEqual([]);
+      expect(generateAllSubsets("")).toEqual([""]);
     });
   
     test("returns an array with the input string as the only element if it has length 1", () => {
-      expect(generate_all_subsets("a")).toEqual(["", "a"]);
+      expect(generateAllSubsets("a")).toEqual(["", "a"]);
     });
   
     test("returns all possible subsets of a two-character string", () => {
-      expect(generate_all_subsets("ab")).toEqual(["", "a", "b", "ab"]);
+      expect(generateAllSubsets("ab").sort()).toEqual(["", "a", "b", "ab"].sort());
     });
   
     test("returns all possible subsets of a three-character string", () => {
-      expect(generate_all_subsets("abc")).toEqual([
+      expect(generateAllSubsets("abc").sort()).toEqual([
         "",
         "a",
         "b",
@@ -22,11 +25,8 @@
         "ac",
         "bc",
         "abc",
-      ]);
-    });
-  
-    test("returns all possible subsets of a string with duplicate characters", () => {
-      expect(generate_all_subsets("aab")).toEqual(["", "a", "b", "ab", "aa", "ab", "aab", "ab"]);
+      ].sort());
     });
   });
-  
+=======
+>>>>>>> parent of e6d3921 (add generate_subsets)

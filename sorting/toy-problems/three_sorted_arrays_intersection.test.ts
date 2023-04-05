@@ -1,3 +1,5 @@
+import findIntersection from "./three_sorted_arrays_intersection";
+
 describe('findIntersection', () => {
     it('returns [-1] when no intersection is found', () => {
       const arr1 = [1, 2, 3];

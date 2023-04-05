@@ -5,7 +5,7 @@
  * @param {number} k The number of frequent elements to return.
  * @returns {number[]} An array of the top k frequent elements.
  */
-function find_top_k_frequent_elements(arr: number[], k: number): number[] {
+export default function find_top_k_frequent_elements(arr: number[], k: number): number[] {
     let frequency: Record<number, number> = {};
     let numbers: number[][] = [[]];
     let result: number[] = [];
@@ -61,5 +61,5 @@ function find_top_k_frequent_elements(arr: number[], k: number): number[] {
       }
     }
   
-    return result.length ? result : [1];
+    return result.length ? result : [-1];
   }

@@ -5,7 +5,7 @@
  * @param arr3 The third array of numbers.
  * @returns An array of their intersection or [-1] if not found.
  */
-function findIntersection(arr1: number[], arr2: number[], arr3: number[]): number[] {
+export default function findIntersection(arr1: number[], arr2: number[], arr3: number[]): number[] {
     let result: number[] = [];
   
     let i = 0;

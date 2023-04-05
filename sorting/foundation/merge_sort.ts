@@ -17,7 +17,7 @@
  * @param {Array<number>} arr - The input array to be sorted.
  * @returns {Array<number>} - The sorted array.
  */
-function merge_sort(arr: Array<number>): Array<number> {
+export default function merge_sort(arr: Array<number>): Array<number> {
     /**
      * Recursively splits the array into smaller subarrays and merges them together in sorted order.
      * @param {Array<number>} arr - The input array to be sorted.
@@ -26,6 +26,8 @@ function merge_sort(arr: Array<number>): Array<number> {
      * @returns {void}
      */
     function helper(arr: Array<number>, start: number, end: number): void {
+        if (arr.length === 0) return; 
+
         if (start === end) {
             return; 
         }

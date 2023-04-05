@@ -23,7 +23,7 @@
  * @param {Array<number>} arr - The array of integers to be sorted.
  * @return {Array<number>} The sorted array of integers.
  */
- function counting_sort(arr: Array<number>): Array<number> {
+ export default function counting_sort(arr: Array<number>): Array<number> {
     const positiveCount: Array<number> = [];
     const negativeCount: Array<number> = [];
     const result: Array<number> = [];

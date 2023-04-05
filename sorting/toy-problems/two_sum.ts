@@ -5,7 +5,7 @@
  * @param target The target sum to find.
  * @returns An array of two indices or [-1, -1] if not found.
  */
-function twoSum(numbers: number[], target: number): [number, number] {
+export default function twoSum(numbers: number[], target: number): [number, number] {
     const hash: Record<number, number> = {};
     numbers.forEach((n, i) => {
       hash[n] = i;
@@ -20,4 +20,3 @@ function twoSum(numbers: number[], target: number): [number, number] {
   
     return [-1, -1];
   }
-  

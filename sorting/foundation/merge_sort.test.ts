@@ -1,3 +1,5 @@
+import merge_sort from "./merge_sort";
+
 describe('merge_sort', () => {
     test('sorts an empty array', () => {
       const arr: Array<number> = [];

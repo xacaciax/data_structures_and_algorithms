@@ -4,7 +4,7 @@
  * @param {Array<number>} arr - The array of numbers to be sorted.
  * @returns {Array<number>} The sorted array of numbers.
  */
-function selectionSort(arr: Array<number>): Array<number> {
+export default function selectionSort(arr: Array<number>): Array<number> {
   let n = arr.length;
 
   // Loop through each element in the array
@@ -29,5 +29,3 @@ function selectionSort(arr: Array<number>): Array<number> {
   // Return the sorted array
   return arr;
 }
-
-export default selectionSort;
