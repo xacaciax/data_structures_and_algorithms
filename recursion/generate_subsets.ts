@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Generates all possible subsets of the input string.
  * @param {string} s - The input string.
@@ -33,5 +32,3 @@ export default function generateAllSubsets(s: string): string[] {
   
     return result;
   }
-=======
->>>>>>> parent of e6d3921 (add generate_subsets)
