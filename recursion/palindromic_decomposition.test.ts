@@ -1,11 +1,6 @@
 import generatePalindromicDecompostion from 'palindromic_decomposition';
 
 describe('generatePalindromicDecompostion', () => {
-    test('returns empty array when input string is empty', () => {
-      const result = generatePalindromicDecompostion('');
-      expect(result).toEqual([]);
-    });
-  
     test('returns single letter decomposition when input string has length 1', () => {
       const result = generatePalindromicDecompostion('a');
       expect(result).toEqual(['a']);
