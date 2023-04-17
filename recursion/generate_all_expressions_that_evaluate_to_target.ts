@@ -34,7 +34,7 @@ const evaluate = (str: string): number => {
     return products.reduce((a, c) => a + c, 0);
   };
   
-  function generate_all_expressions(
+  export default function generateAllExpressions(
     s: string,
     target: number
   ): string[] {
