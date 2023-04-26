@@ -3,7 +3,7 @@
  * @param n The length of the well-formed brackets.
  * @returns An array containing all well-formed brackets of length n.
  */
-function findAllWellFormedBrackets(n: number): string[] {
+export default function findAllWellFormedBrackets(n: number): string[] {
     let result: string[] = [];
   
     /**
