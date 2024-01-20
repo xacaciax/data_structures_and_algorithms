@@ -1,4 +1,4 @@
-function reverseBits(n: number): number {  
+export default function reverseBits(n: number): number {  
     // Initialize rev to 0.
     let rev = 0;
   
