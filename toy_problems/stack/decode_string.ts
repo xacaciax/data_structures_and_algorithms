@@ -1,4 +1,5 @@
-function decodeString(s: string): string {
+// Single Stack Solution
+export default function decodeString(s: string): string {
     let chars = s.split('');
     let stack: string[] = [];
     for (let i = 0; i < chars.length; i++) {
@@ -34,4 +35,40 @@ function decodeString(s: string): string {
         }
     }
     return stack.join('');
+};
+
+// Two Stack Solution
+function decodeString2(s: string): string {
+    let nums = '0123456789';
+    let letters = 'abcdefghijklmnopqrstuvwxyz';
+    let chars = s.split('');
+    let currentString = '';
+    let k = 0;
+    let kStack = []; 
+    let strStack = [];
+    for (let i = 0; i < chars.length; i++) {
+        let char = chars[i];
+        if (char == ']') {
+            let curK = kStack.pop(); 
+            let decodedString = strStack.pop();          
+            while(curK > 0) {
+                decodedString += currentString; 
+                curK--; 
+            }
+            currentString = decodedString;
+        } else if (char == '[') {
+            kStack.push(k);
+            strStack.push(currentString)
+            // reset globals after saving to stack
+            currentString = '';
+            k = 0; 
+        } else {
+            if(nums.includes(char)) {
+                k = (k * 10) + parseInt(char);
+            } else if(letters.includes(char)) {
+                currentString += char;
+            }
+        }
+    }
+    return currentString;
 };
